@@ -1,83 +1,120 @@
 * {
   margin: 0px;
 }
-.foto{
+
+.foto {
   padding: 15px;
 }
-form{
+
+form {
   display: -webkit-inline-box;
 }
-header, nav, footer  {
+
+header, nav, footer {
 width: 100%;
 background-color: rgb(35, 71, 114);
 padding: 0px;
 }
-h1{
-  padding: 25px;
+h1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-.card{
+.card {
     background-color: rgb(35, 71, 114);
+    color: white;
 }
-span{
+
+span {
 color: white;
 }
-.textFooter{
+
+.textFooter {
   text-align: center;
   color: white;
 }
-.textDestacado{
+
+.textDestacado {
   color: white;
 }
-.col-md-8{
+
+.col-md-8 {
   padding-right: 0px;
 }
-.col-md-4{
+
+.col-md-4 {
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .col-md-auto, .justify-content-md-right {
   padding: 0px;
 }
+
 .search {
   padding-top: 25px;
   background-color:
 }
-.btn{
+
+.btn {
   padding: 15px;
   background-color: white;
   color: rgb(100, 100, 100);
   border-radius: 10px;
 }
+
 .btn-outline-success {
     background-color: transparent;
     background-image: none;
     border: none;
     padding: 0px;
-
 }
+
 .navbar-brand {
   margin: 0px;
 }
-.navbar-expand-lg .navbar-nav .nav-link {
+
+.navbar-expand-lg .navbar-nav {
   padding-left: 15px;
 }
+
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
 }
+
 .nav-item {
   display: inline-block;
   float: left;
   letter-spacing: 1,5px;;
 }
+
+.card {
+  margin: 20px;
+}
 .card-deck {
-  padding: 30px;
+  padding: 0px;
   margin-bottom: 30px;
 }
+.card-body {
+  padding: 15px;
+}
+.card-title{
+padding: 15px;
+}
+
 .navbar-toggler-icon {
   color: #ffffff;
 }
+
 .boton {
   background-color: white;
   color: black;
   border-radius: 15px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+ul {
+  list-style:none;
 }
