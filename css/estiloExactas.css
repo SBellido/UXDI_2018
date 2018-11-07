@@ -13,15 +13,24 @@ form {
 header, nav, footer {
 width: 100%;
 background-color: rgb(35, 71, 114);
-padding: 0px;
 }
+
+hr{
+  color: white;
+}
+
 h1 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .card {
-    background-color: rgb(35, 71, 114);
+    background-color: rgb(0, 0, 51);
     color: white;
+    border-top-right-radius: 0px;
+    border-top-left-radius:  0px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
 }
 
 span {
@@ -79,24 +88,34 @@ color: white;
 
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
+  padding: 15px;
 }
 
 .nav-item {
   display: inline-block;
   float: left;
-  letter-spacing: 1,5px;;
+  letter-spacing: 1.5px;;
 }
 
 .card {
   margin: 20px;
 }
+
+.dropdown-item {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.5px;;
+
+}
 .card-deck {
   padding: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
+
 .card-body {
   padding: 15px;
 }
+
 .card-title{
 padding: 15px;
 }
@@ -109,12 +128,4 @@ padding: 15px;
   background-color: white;
   color: black;
   border-radius: 15px;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-ul {
-  list-style:none;
 }
