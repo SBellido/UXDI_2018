@@ -49,7 +49,7 @@ color: white;
 
 .search {
   padding-top: 25px;
-  background-color:
+  max-width: 50% !important;
 }
 
 .btn {
@@ -115,4 +115,12 @@ padding: 15px;
   background-color: white;
   color: black;
   border-radius: 15px;
+}
+
+.w-70{
+  width: 70% !important;
+}
+
+.fr {
+  float: right;
 }
