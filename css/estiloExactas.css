@@ -1,6 +1,4 @@
-* {
-  margin: 0px;
-}
+
 
 .foto {
   padding: 15px;
@@ -32,7 +30,9 @@ h1 {
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
 }
-
+.col {
+  padding: 0px;
+}
 span {
 color: white;
 }
@@ -46,18 +46,6 @@ color: white;
   color: white;
 }
 
-.col-md-8 {
-  padding-right: 0px;
-}
-
-.col-md-4 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.col-md-auto, .justify-content-md-right {
-  padding: 0px;
-}
 
 .search {
   padding-top: 25px;
@@ -97,15 +85,14 @@ color: white;
   letter-spacing: 1.5px;;
 }
 
-.card {
-  margin: 20px;
+.card-deck {
+  margin: 5px;
 }
-
 a.dropdown-item {
   color: white;
   letter-spacing: 0.5px;
   text-align: left;
-  font-weight: lighter;
+  font-weight: bold;
 }
 .card-deck {
   padding: 0px;
