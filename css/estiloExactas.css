@@ -15,9 +15,13 @@ background-color: white;
 
 }
 
+a:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .navbar {
   background-color: rgb(0, 0, 51);
   font-weight: bold;
+  padding-bottom: 0px;
 }
 
 .navbar-toggler {
@@ -32,6 +36,7 @@ margin-bottom: 10px;
 
 .foto {
   padding: 15px;
+  margin-top: 15px;
 }
 
 form {
@@ -41,6 +46,10 @@ form {
 header, nav, footer {
 width: 100%;
 background-color: rgb(0, 0, 51);
+}
+
+footer {
+  margin-top: 30px;
 }
 
 hr{
@@ -60,8 +69,8 @@ p.texto {
 .card {
     background-color: rgb(0, 0, 51);
     color: white;
-    border-top-right-radius: 0px;
-    border-top-left-radius:  0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius:  20px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
 }
@@ -105,9 +114,7 @@ color: white;
     padding: 0px;
 }
 
-.navbar-brand {
-  margin: 0px;
-}
+
 
 .navbar-expand-lg .navbar-nav {
   padding-left: 0px;
@@ -117,6 +124,9 @@ color: white;
   color: rgb(255, 255, 255);
   padding-left: 15px;
   padding-right: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
 }
 
 .nav-item {
@@ -127,6 +137,7 @@ color: white;
 
 .card-deck {
   margin: 5px;
+  width: 25%
 }
 a.dropdown-item {
   color: white;
@@ -163,4 +174,50 @@ padding: 15px;
 
 .fr {
   float: right;
+}
+
+.logo-center{
+  text-align: center;
+}
+
+.justify-content-md-center{
+  display: inline;
+}
+
+.navbar{
+  padding-left: 0%
+}
+
+
+@media only screen and (min-width: 401px) {
+  .hidden-xs{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .header-content {
+      display: inline;
+    }
+
+    .search-bar{
+      display: -webkit-box;
+    }
+
+    .w-70 {
+      width: 190% !important;
+    }
+
+    .visible-xs-block{
+      display: none;
+    }
+
+    col.col-lg-2.col-sm-0{
+      display: none;
+    }
+
 }
