@@ -231,19 +231,18 @@ a.dropdown-item {
 .navbar{
   padding-left: 0%
 }
+.d-block {
+    display: block !important;
+    margin: 0 auto;
+}
 
-
-@media only screen and (min-width: 401px) {
+@media screen and (min-width: 401px) {
   .hidden-xs{
     display: none;
   }
 }
 
-@media only screen and (max-width: 400px) {
-    body {
-        background-color: lightblue;
-    }
-
+@media screen and (max-width: 767px) {
     .header-content {
       display: inline;
     }
@@ -253,17 +252,64 @@ a.dropdown-item {
     }
 
     .w-70 {
-      width: 190% !important;
+      width: 80% !important;
     }
 
     .visible-xs-block{
       display: none;
     }
-
-    col.col-lg-2.col-sm-0{
+    .navbar-brand {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+    form.buscador {
+        margin: 0 auto 5px auto;
+        width: 100%;
+    }
+    .d-block {
+      margin: 10px 0 0 15px;
+    }
+    .navbar-nav {
+      text-align: left;
+    }
+    .nav-item {
+      display: block;
+      float: none;
+      letter-spacing: 1.5px;
+      margin: 0;
+    }
+    .card {
+      min-height: auto;
+      margin-bottom: 20px;
+    }
+    .title {
+        margin: 1em 0;
+    }
+    .card-img-top {
       display: none;
     }
-
+    .card-title {
+        margin-bottom: .75rem;
+        background: #e4e4e4;
+        padding: 10px;
+    }
+    .card-body {
+        padding: 0;
+    }
+    .formulario .col {
+      display: none;
+    }
+    .stepwizard {
+        display: table;
+        width: 95%;
+        margin: 0 auto;
+    }
+    form {
+        margin: 0 auto 10px auto;
+        width: 95%;
+    }
 }
 
 .imagenes {
