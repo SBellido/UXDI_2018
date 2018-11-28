@@ -73,6 +73,7 @@ form {
     border-radius: 0;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
 .lupa {
   width: 40px;
   padding: 8px;
@@ -383,6 +384,13 @@ a.dropdown-item {
 }
 .formulario .form-control {
   border:1px solid #abb1b7;
+}
+.formulario .form-control.invalid {
+  border: 1px solid #e09292;
+}
+.error-msg {
+  font-size: 10px;
+  color: #e09292;
 }
 .formulario h5 {
   text-transform: uppercase;

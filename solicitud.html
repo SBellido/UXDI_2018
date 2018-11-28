@@ -12,13 +12,6 @@
     gtag('config', 'UA-129996955-1');
   </script>
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MPMX7QP');</script>
-  <!-- End Google Tag Manager -->
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -143,7 +136,7 @@
         </div>
     </div>
 </div>
-<form role="form" id="form-revalida">
+<form role="form" id="form-revalida" method="POST">
     <div class="row setup-content" id="step-1">
         <div class="col-md-12 text-center">
             <div class="form-group">
@@ -173,7 +166,7 @@
                 <input maxlength="300" type="email" required="required" class="form-control" placeholder="" name="email"/>
             </div>
 
-            <button class="btn btn-primary nextBtn btn-lg pull-right" type="submit" formaction="#step-2">Siguiente</button>
+            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
         </div>
     </div>
     <div class="row setup-content" id="step-2">
@@ -213,7 +206,7 @@
               <input class="form-check-input" type="checkbox" value="finalizado" id="Finalizado" name="tpFinal">
               <label class="form-check-label" for="Finalizado">Finalizado</label>
             </div>
-            <p><a class="btn btn-secondary nextBtn btn-lg float-left" href="#step-1" >Volver</a><button class="btn btn-primary nextBtn btn-lg float-right" type="submit" formaction="#step-3" >Solicitar Reválida</button></p>
+            <p><button class="btn btn-secondary prevBtn btn-lg float-left" type="button" >Volver</button><button class="btn btn-primary nextBtn btn-lg float-right btn-send" type="button">Solicitar Reválida</button></p>
         </div>
     </div>
     <div class="row setup-content" id="step-3">
