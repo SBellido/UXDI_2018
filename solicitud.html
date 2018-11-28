@@ -7,7 +7,7 @@
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WNQQ3NN');</script>
+  })(window,document,'script','dataLayer','GTM-MPMX7QP');</script>
   <!-- End Google Tag Manager -->
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -19,25 +19,16 @@
   <link rel="stylesheet" href="./css/estiloExactas.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,400,500,700,900" rel="stylesheet">
 
-  <title>Facultad de Ciencias Exactas</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129663229-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-129663229-1');
-</script>
+  <title>Solicitud de Reválida | Facultad de Ciencias Exactas</title>
 
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNQQ3NN"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPMX7QP"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+
   <section class="top-nav">
       <div class="container">
         <div class="row">
@@ -129,50 +120,50 @@
             <div class="stepwizard">
     <div class="stepwizard-row setup-panel">
         <div class="stepwizard-step">
-            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+            <a href="#step-1" class="btn btn-primary btn-circle">1</a>
             <p>PASO 1</p>
         </div>
         <div class="stepwizard-step">
-            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+            <a href="#step-2" class="btn btn-default btn-circle">2</a>
             <p>PASO 2</p>
         </div>
         <div class="stepwizard-step">
-            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+            <a href="#step-3" class="btn btn-default btn-circle">3</a>
             <p>PASO 3</p>
         </div>
     </div>
 </div>
-<form role="form">
+<form role="form" id="form-revalida">
     <div class="row setup-content" id="step-1">
         <div class="col-md-12 text-center">
             <div class="form-group">
-                <label class="control-label">Nombre y Apellido</label>
-                <input  maxlength="100" type="text" required="required" class="form-control" placeholder=" "  />
+                <label class="control-label" for="nombreApellido">Nombre y Apellido</label>
+                <input  maxlength="100" type="text" required="required" class="form-control" placeholder=" "  name="nombreApellido"/>
             </div>
             <div class="form-group">
-                <label class="control-label">Usuario de Guaraní</label>
-                <input maxlength="100" type="text" required="required" class="form-control" placeholder=" " />
+                <label class="control-label" for="usuarioGuarani">Usuario de Guaraní</label>
+                <input maxlength="100" type="text" required="required" class="form-control" placeholder=" " name="usuarioGuarani"/>
             </div>
             <div class="form-group">
-              <label class="control-label">Año en que se aprobó</label>
-              <select class="custom-select" id="inputGroupSelect03">
-                  <option selected>Selecciona un año...</option>
-                  <option value="1">2008</option>
-                  <option value="2">2007</option>
-                  <option value="3">2006</option>
-                  <option value="4">2005</option>
-                  <option value="5">2004</option>
-                  <option value="6">2003</option>
-                  <option value="7">2002</option>
-                  <option value="8">2001</option>
+              <label class="control-label" for="anoAprobado">Año en que se aprobó</label>
+              <select class="custom-select" id="inputGroupSelect03" name="anoAprobado">
+                  <option selected disabled>Selecciona un año...</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
               </select>
             </div>
             <div class="form-group">
-                <label class="control-label">Email</label>
-                <input maxlength="300" type="email" required="required" class="form-control" placeholder=" " />
+                <label class="control-label" for="email">Email</label>
+                <input maxlength="300" type="email" required="required" class="form-control" placeholder="" name="email"/>
             </div>
 
-            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
+            <button class="btn btn-primary nextBtn btn-lg pull-right" type="submit" formaction="#step-2">Siguiente</button>
         </div>
     </div>
     <div class="row setup-content" id="step-2">
@@ -180,46 +171,46 @@
             <h5>situación actual del estudiante</h5>
             <h6>¿Completó la totalidad de las materias?</h6>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" value="" id="si">
+              <input class="form-check-input" type="checkbox" value="si" id="si" name="materiasCompletas">
               <label class="form-check-label" for="si">SÍ</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" value="" id="no">
+              <input class="form-check-input" type="checkbox" value="no" id="no" name="materiasCompletas">
               <label class="form-check-label" for="no">NO</label>
             </div>
             <div class="form-group">
-                <label class="control-label">Cantidad de cursadas adeudadas</label>
-                <input maxlength="200" type="text" required="required" class="form-control" placeholder=" " />
+                <label class="control-label" for="cursadasAdeudadas">Cantidad de cursadas adeudadas</label>
+                <input maxlength="200" type="number" required="required" class="form-control" placeholder=" " name="cursadasAdeudadas"/>
             </div>
             <div class="form-group">
-                <label class="control-label">Cantidad de finales adeudados</label>
-                <input maxlength="200" type="text" required="required" class="form-control" placeholder=" "  />
+                <label class="control-label" for="finalesAdeudados">Cantidad de finales adeudados</label>
+                <input maxlength="200" type="number" required="required" class="form-control" placeholder=" "  name="finalesAdeudados"/>
             </div>
             <div class="form-group">
-                <label class="control-label">Cantidad de materias optativas adeudados</label>
-                <input maxlength="200" type="text" required="required" class="form-control" placeholder=" "  />
+                <label class="control-label" for="optativasAdeudadas">Cantidad de materias optativas adeudadas</label>
+                <input maxlength="200" type="text" required="required" class="form-control" placeholder=" "  for="nameAdeudadas"/>
             </div>
             <h6>¿Trabajo final iniciado?</h6>
             <div class="form-check form-check-inline mb-4">
-              <input class="form-check-input" type="checkbox" value="" id="Iniciado">
+              <input class="form-check-input" type="checkbox" value="iniciado" id="Iniciado" name="tpFinal">
               <label class="form-check-label" for="Iniciado">Iniciado</label>
             </div>
             <div class="form-check form-check-inline mb-4">
-              <input class="form-check-input" type="checkbox" value="" id="Aprobado">
+              <input class="form-check-input" type="checkbox" value="aprobado" id="Aprobado" name="tpFinal">
               <label class="form-check-label" for="Aprobado">Aprobado</label>
             </div>
             <div class="form-check form-check-inline mb-4">
-              <input class="form-check-input" type="checkbox" value="" id="Finalizado">
+              <input class="form-check-input" type="checkbox" value="finalizado" id="Finalizado" name="tpFinal">
               <label class="form-check-label" for="Finalizado">Finalizado</label>
             </div>
-            <p><button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Enviar</button></p>
+            <p><a class="btn btn-secondary nextBtn btn-lg float-left" href="#step-1" >Volver</a><button class="btn btn-primary nextBtn btn-lg float-right" type="submit" formaction="#step-3" >Solicitar Reválida</button></p>
         </div>
     </div>
     <div class="row setup-content" id="step-3">
         <div class="col-md-12 text-center">
             <p class="correo"><img src="images/email.svg"></p>
             <p class="porfa">Por favor, verificá tu correo electrónico para confirmar el proceso.</p>
-            <p><button class="btn btn-primary btn-lg pull-right" href="index.html" type="button">Volver al inicio</button></p>
+            <p><a class="btn btn-primary btn-lg pull-right" href="index.html">Volver al inicio</a></p>
         </div>
     </div>
 </form>
